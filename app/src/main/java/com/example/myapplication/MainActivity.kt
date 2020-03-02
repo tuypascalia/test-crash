@@ -10,6 +10,7 @@ import android.widget.Button
 import com.crashlytics.android.Crashlytics
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,10 +18,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+        test.text ="ádsadsa"
         val crashButton = Button(this)
         crashButton.text = "Crash!"
         crashButton.setOnClickListener {
-            Crashlytics.getInstance().crash() // Force a crash
+           val a = arrayOf("a", "b", "c")
+            val c = a[4]
+            test.text =c
         }
 
         addContentView(crashButton, ViewGroup.LayoutParams(

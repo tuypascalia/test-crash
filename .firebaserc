@@ -1,6 +1,7 @@
 {
   "projects": {
     "default": "test-project-31c3f",
-    "dev": "test-project-31c3f"
+    "dev": "test-project-31c3f",
+    "test": "test-project-31c3f"
   }
 }
